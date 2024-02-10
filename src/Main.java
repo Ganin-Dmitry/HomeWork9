@@ -30,7 +30,8 @@ public class Main {
         for (int day : arr) {
             if (maxDay < day) {
                 maxDay = day;
-            } else if (minDay > day) {
+            }
+            if (minDay > day) {
                 minDay = day;
             }
         }
@@ -43,7 +44,7 @@ public class Main {
         for (int day : arr) {
             monthSum += day;
         }
-        int middleMonth = monthSum / arr.length;
+        float middleMonth = (float) monthSum / arr.length;
         System.out.println("Средняя сумма трат за месяц составила " + middleMonth + " рублей");
     }
 
